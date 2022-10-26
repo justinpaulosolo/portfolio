@@ -1,57 +1,31 @@
-import Image from 'next/image'
-import styles from './page.module.css'
-
+import Image from "next/image";
+import { SocialButtons } from "../components/home/SocialButtons";
+import profile from "../public/profile.jpeg";
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js 13!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://beta.nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js 13</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Explore the Next.js 13 playground.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates/next.js/app-directory?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>Deploy your Next.js site to a public URL with Vercel.</p>
-          </a>
+    <div className="flex flex-col mx-auto max-w-3xl">
+      <div className="mb-4 flex flex-col-reverse items-center space-x-4 md:flex-row">
+        <div className="space-y-2">
+          <h1 className="text-3xl font-bold md:text-5xl">Justin Solo</h1>
+          <p className="font-formal text-sm uppercase tracking-wider">
+            Developer / Creator
+          </p>
+          <p className="text-base">
+            I&apos;m passionate about creating innovative and accessible
+            full-stack applications.
+          </p>
+          <SocialButtons />
         </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+        <div className="md-flex items-center">
+          <Image
+            src={profile}
+            alt="profile-pic"
+            width={150}
+            height={150}
+            className="mb-2 rounded-full md:mb-0 md:w-fit md:rounded-2xl"
+          />
+        </div>
+      </div>
     </div>
-  )
+  );
 }
