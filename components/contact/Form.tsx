@@ -2,8 +2,18 @@
 
 import React from "react";
 
-export function ContactForm() {
-  console.log("test");
+export type ContactFormData = {
+  email: string;
+  subject: string;
+  message: string;
+};
+
+interface Props {
+  onFormSubmit: (data: ContactFormData) => void;
+}
+
+export function ContactForm(props: Props) {
+  const onFormSubmit = props.onFormSubmit;
 
   const handleSubmit = async (e: React.SyntheticEvent) => {
     e.preventDefault();
@@ -13,29 +23,13 @@ export function ContactForm() {
       message: { value: string };
     };
 
-    const data = {
+    const data: ContactFormData = {
       email: target.email.value,
       subject: target.subject.value,
       message: target.message.value,
     };
 
-    const JSONdata = JSON.stringify(data);
-
-    const endpoint = "api/sendgrid";
-
-    const options = {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSONdata,
-    };
-
-    const response = await fetch(endpoint, options);
-
-    const result = await response.json();
-
-    console.log(result);
+    onFormSubmit(data);
   };
 
   return (
