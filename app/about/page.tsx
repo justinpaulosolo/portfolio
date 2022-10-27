@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Bio } from "../../components/about/Bio";
 
 import picture from "../../public/bio-picture.jpg";
-export default function About() {
+export default function AboutPage() {
   return (
     <div className="flex flex-col mx-auto max-w-3xl">
       <h1 className="font-bold text-4xl">About</h1>
@@ -13,6 +13,7 @@ export default function About() {
           width={200}
           height={200}
           className="mb-2 rounded-2xl drop-shadow-md"
+          placeholder="blur"
           priority
         />
       </div>
