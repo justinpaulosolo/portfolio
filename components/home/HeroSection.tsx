@@ -47,6 +47,7 @@ export function HeroSection() {
               animationDuration={300}
               multiline={true}
             >
+              {" "}
               full-stack applications
             </RoughNotation>
             .
