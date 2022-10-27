@@ -15,7 +15,7 @@ export function HeroSection() {
               type="highlight"
               color="yellow"
               order={1}
-              animationDuration={300}
+              animationDuration={200}
             >
               Software Engineer
             </RoughNotation>
@@ -24,7 +24,7 @@ export function HeroSection() {
               type="highlight"
               color="pink"
               order={2}
-              animationDuration={300}
+              animationDuration={200}
             >
               Creator
             </RoughNotation>{" "}
@@ -35,7 +35,7 @@ export function HeroSection() {
               type="highlight"
               color="lavender"
               order={3}
-              animationDuration={300}
+              animationDuration={200}
             >
               innovative
             </RoughNotation>{" "}
@@ -44,7 +44,7 @@ export function HeroSection() {
               type="highlight"
               color="skyblue"
               order={4}
-              animationDuration={300}
+              animationDuration={200}
               multiline={true}
             >
               {" "}
@@ -54,7 +54,7 @@ export function HeroSection() {
           </p>
           <p>
             I&apos;m currently looking for a new role as developer.
-            <RoughNotation type="circle" order={5} animationDuration={300}>
+            <RoughNotation type="circle" order={5} animationDuration={200}>
               <span className="font-medium"> Hire me?</span>
             </RoughNotation>
           </p>
