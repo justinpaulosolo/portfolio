@@ -17,8 +17,37 @@ export default function About() {
         />
       </div>
       <Bio />
-
-      <h3 className="font-bold text-2xl pt-2">On the web</h3>
+      <h3 className="font-bold text-2xl pt-4">More info about me?</h3>
+      <p className="pt-2">
+        You can follow me on{" "}
+        <a
+          href="https://twitter.com/justinsolodev"
+          className="underline text-blue-500"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Twitter @justinsolodev
+        </a>
+        , or checkout my{" "}
+        <a
+          href="https://github.com/justinpaulosolo"
+          className="underline text-blue-500"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Github
+        </a>
+        , and{" "}
+        <a
+          href="https://www.linkedin.com/in/justinpaulosolo/"
+          className="underline text-blue-500"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Linkedin
+        </a>
+        .
+      </p>
     </div>
   );
 }
