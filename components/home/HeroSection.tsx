@@ -17,7 +17,7 @@ export function HeroSection() {
               order={1}
               animationDuration={300}
             >
-              Developer
+              Software Engineer
             </RoughNotation>
             {" / "}
             <RoughNotation
@@ -67,7 +67,7 @@ export function HeroSection() {
           alt="profile-pic"
           width={175}
           height={175}
-          className="mb-2 rounded-2xl"
+          className="mb-2 rounded-full drop-shadow-md"
           priority
         />
       </div>
