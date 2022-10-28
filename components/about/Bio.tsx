@@ -7,7 +7,12 @@ export function Bio() {
     <RoughNotationGroup show={true}>
       <p className="pt-2">
         Hello! I am Justin, a{" "}
-        <RoughNotation type="highlight" animationDuration={200} color="yellow">
+        <RoughNotation
+          type="highlight"
+          animationDelay={50}
+          animationDuration={200}
+          color="yellow"
+        >
           full-stack{" "}
         </RoughNotation>
         software engineer based in Irvine, California. I love building
