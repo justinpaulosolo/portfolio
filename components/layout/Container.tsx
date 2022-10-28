@@ -29,7 +29,7 @@ function DesktopNav() {
     <div className="items-center hidden ml-auto md:flex space-x-4">
       <NavlinkItem href="/about">About</NavlinkItem>
       <NavlinkItem href="/projects">Projects</NavlinkItem>
-      <NavlinkItem href="/blog">Blog</NavlinkItem>
+      <NavlinkItem href="/journal">Journal</NavlinkItem>
       <NavlinkItem href="/contact">Contact</NavlinkItem>
     </div>
   );

@@ -15,7 +15,7 @@ export default function RootLayout({
         <meta name="description" content="Full-stack developer" />
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body className="bg-gray-50">
+      <body className="bg-white">
         <Container>{children}</Container>
       </body>
     </html>
